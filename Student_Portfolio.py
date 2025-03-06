@@ -11,10 +11,9 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 # Home section
 if page == "Home":
     st.title("🎓 Student Portfolio")
-    st.image("Uwe.jpg", width=150, caption="Default Profile Picture")
-
-    # Student Details
-    name = st.text_input("Your Name", "HAKIZIMANA UWE Henriette")
+    st.image("juju.jpg", width=150, caption="Default Profile Picture")
+    
+    name = st.text_input("Your Name", "DUSHIMIMANA Julienne")
     location = st.text_input("Location", "Musanze")
     field_of_study = st.text_input("Field of Study", "Computer Science / Software Engineering Year 3")
     university = st.text_input("University", "INES-Ruhengeri")
@@ -66,9 +65,9 @@ elif page == "Projects":
 
     st.subheader("⏳ Timeline of Academic & Project Milestones")
     milestones = [
-        "✅ Year 2023: JavaScript project completed",
-        "🏆 Year 2024: Hackathon participation ",
-        "💼 In 2025: I got certified in Software Developement ",
+        "✅ Year 2023: AI project completed",
+        "🏆 Year 2024: Hackathon participation in Kigali",
+        "💼 In 2025: Certified in dionne coaching",
         "📖 Year 2025: Dissertation submission"
     ]
     for milestone in milestones:
@@ -79,24 +78,31 @@ elif page == "Projects":
 
     project_data = {
         "Year 1 Project": {
-            "📊 Ines-eye-app": {
+            "📊 OSBN Project": {
                 "type": "Individual",
-                "description": "A project linking lectures and students together with other outside visitors.",
-                "link": "https://github.com/uwehenry/Ines-eye-app"
+                "description": "Online shopping materials.",
+                "link": "https://github.com/julienne09/osbm"
             }
         },
         "Year 2 Project": {
-            "🤖 AI_Group1_ExpertSystem": {
+            "🤖 Dissertation Project": {
+                "type": "Individual",
+                "description": "Developed an ecommerce platform to Cancel order and refund processing.",
+                "link": "https://github.com/julienne09/Dissertation"
+            }
+        },
+        "Year 3 Project": {
+            "🌐 Natural Oil": {
                 "type": "Group",
-                "description": "Developed an AI-powered chatbot using Python and NLP techniques.",
-                "link": "https://github.com/uwehenry/-AI_Group1_ExpertSystem_Assignment2-"
+                "description": "Designed and developed a website for Beautiful Lady.",
+                "link": "https://github.com/julienne09/NATURAL-OIL-"
             }
         },
         "Dissertation": {
-            "🌍 Dissertation Project": {
+            "🌍 Hospital Management System": {
                 "type": "Individual",
-                "description": "Still working on it.",
-                "link": "https://github.com/uwehenry/dissertation"
+                "description": "Designed and developed a website for a hospital.",
+                "link": "https://github.com/julienne09"
             }
         }
     }
@@ -117,7 +123,7 @@ elif page == "Skills":
     st.title("⚡ Skills and Achievements")
 
     st.subheader("Programming Skills")
-    skill_python = st.slider("Python", 0, 100, 90)
+    skill_python = st.slider("Python", 0, 100, 80)
     st.progress(skill_python)
     skill_js = st.slider("JavaScript", 0, 100, 75)
     st.progress(skill_js)
@@ -136,10 +142,12 @@ elif page == "Skills":
 elif page == "Testimonials":
     st.title("🗣 Student Testimonials")
 
-    st.subheader("💬Testimonial:")
-    st.write("*Uwe Henriette is a brilliant problem solver! Her final year project is truly innovative. – Mclement*")
+    st.subheader("💬 Testimonial:")
+    st.write("*Julienne is a brilliant problem solver! Her final year project is truly innovative. – Mclement*")
+    st.write("🌟 An AI Programmer, always eager to learn and contribute! – Mclement")
+
     st.markdown("---")
-    st.subheader("✍ Provide your Testimonial")
+    st.subheader("✍ Leave a Testimonial")
     with st.form("testimonial_form"):
         name = st.text_input("Your Name")
         relationship = st.selectbox("Your Relationship", ["Classmate", "Mentor", "Teammate", "Other"])
@@ -152,9 +160,9 @@ elif page == "Testimonials":
 # Contact Page
 elif page == "Contact":
     st.title("📬 Contact Me")
-    st.write("📧 Email: henrietteuwe931@gmail.com")
-    st.write("🔗 [LinkedIn](https://www.linkedin.com/in/henrietteuwe931)")
-    st.write("📂 [GitHub](https://github.com/uwehenry)")
+    st.write("📧 Email: dushimimanajulienne995@gmail.com")
+    st.write("🔗 [LinkedIn](https://www.linkedin.com/in/dushimimana-julienne-b82128355)")
+    st.write("📂 [GitHub](https://github.com/julienne09)")
 
 st.sidebar.write("---")
-st.sidebar.write("Designed by Uwe under the supervision of M Clement")
+st.sidebar.write("Designed by Juju under the supervision of MClement")
