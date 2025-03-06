@@ -11,14 +11,7 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 # Home section
 if page == "Home":
     st.title("🎓 Student Portfolio")
-
-    # Profile picture upload
-    uploaded_image = st.file_uploader("Upload Profile Picture", type=["jpg", "png"])
-
-    if uploaded_image is not None:
-        st.image(uploaded_image, width=150, caption="Profile Picture")
-    else:
-        st.image("Uwe.jpg", width=150, caption="Default Profile Picture")
+    st.image("Uwe.jpg", width=150, caption="Default Profile Picture")
 
     # Student Details
     name = st.text_input("Your Name", "HAKIZIMANA UWE Henriette")
